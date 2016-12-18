@@ -1,0 +1,14 @@
+Welcome to sdb!
+
+sdb is an acronym for simple database
+
+it's not really that simple, but the actual data layout is (for now) quite simple
+it's also threaded to allow concurrent access.
+
+Building:
+
+Complie everything in ./src
+
+[optional] build the generated classes into a jar with sdb.Sdb as it's main class
+
+There is a supplied generic build script to do this for you 

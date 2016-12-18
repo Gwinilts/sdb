@@ -1,0 +1,19 @@
+0.1: first build
++ tables
+a table is comprised of a meta file, a string file and a data file
+the contents of these files is summarized as follows:
+  meta:
+    the length/location of the table name in the string file
+    the length/locations of the row names in the string file
+  string:
+    any strings from data or meta
+  data:
+    the rows of this table
+
+    each row is (8 * [number of rows]) bytes long
+
++ Controller
+the controller gives access to it's child tables
+it has a master table containing it's name, and the names of the child tables
+
+it grants access by table to threads that request access
